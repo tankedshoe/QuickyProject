@@ -10,6 +10,9 @@
 
 using namespace std;
 
+int testArray[] = {1, 2, 3, 4, 5, 6, 7};
+int a, result = 0;
+
 Controller :: Controller()
 {
     
@@ -21,5 +24,11 @@ void Controller:: start()
     {
         cout <<"This loop has executed " << index + 1 << " times" << endl;
     }
+    
+    for (a=0; a < 7; a++)
+    {
+        result += testArray[a];
+    }
+    cout << result << endl;
 }
 
