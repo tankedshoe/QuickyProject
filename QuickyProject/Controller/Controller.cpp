@@ -38,10 +38,17 @@ Controller :: Controller()
     {
         cout << *i << ' ';
     }
+    cout << endl;
 }
 
 void Controller:: start()
 {
-
+    int intArray [5] = {1, 2, 3, 4, 5};
+    string stringArray [3] = {"I" "love" "you"};
+    double doubleArray [4] = {1.2, 1.456, 1.9367};
+    
+    cout << intArray << " <- Reference to Int array" << endl;
+    cout << stringArray << " <- Reference to String array" << endl;
+    cout << doubleArray << " <- Reference to Double array" << endl;
 }
 
