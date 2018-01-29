@@ -7,6 +7,9 @@
 //
 
 #include "Controller.hpp"
+#include <vector>
+#include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -15,20 +18,30 @@ int a, result = 0;
 
 Controller :: Controller()
 {
+    vector <int> intVector;
+    vector <string> stringVector;
     
+    for (int i = 1; i <=5; i++)
+    {
+        intVector.push_back(i);
+        cout << i << endl;
+    }
+    
+    stringVector.push_back("Monday");
+    stringVector.push_back("Tuesday");
+    stringVector.push_back("Wednesday");
+    stringVector.push_back("Thursday");
+    stringVector.push_back("Friday");
+    stringVector.push_back("Saturday");
+    stringVector.push_back("Sunday");
+    for (auto i = stringVector.begin(); i != stringVector.end(); i++)
+    {
+        cout << *i << ' ';
+    }
 }
 
 void Controller:: start()
 {
-    for (int index = 0; index < 10; index++)
-    {
-        cout <<"This loop has executed " << index + 1 << " times" << endl;
-    }
-    
-    for (a=0; a < 7; a++)
-    {
-        result += testArray[a];
-    }
-    cout << result << endl;
+
 }
 
